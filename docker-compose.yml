@@ -18,15 +18,15 @@ services:
   # node and npm moved to 'back' container
   # front:
   #   image: node:latest
-  #   working_dir: /var/www/orthoshop
+  #   working_dir: /var/www/project
   #   user: ${UID:-1000}:${GID:-1000}
-  #   container_name: orthoshop-front
+  #   container_name: laravel-beyond-crud-front
   #   tty: true
   #   restart: unless-stopped
   #   volumes:
-  #     - ./orthoshop:/var/www/orthoshop
+  #     - ./project:/var/www/project
   #   networks:
-  #     - orthoshop
+  #     - laravel-beyond-crud
 
   db:
     image: mysql:latest
